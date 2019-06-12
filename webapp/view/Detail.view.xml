@@ -1,0 +1,19 @@
+<mvc:View controllerName="sap.ui5.zrouting.controller.Detail" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Page
+		id="page"
+		navButtonPress="onNavPress"
+		showNavButton="true"
+		title="{i18n>detailTitle}">
+		<content>
+			<Button type="Accept" text="Detail Press" press="onDetailPress"/>
+			<ObjectHeader
+				id="objectHeader"
+				title="{Category}"
+				number="{i18n>ID}: {Category}">
+				<ObjectAttribute
+				    text="{Name}">
+				</ObjectAttribute>
+			</ObjectHeader>
+		</content>
+	</Page>
+</mvc:View>
